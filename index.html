@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Durga's Homemade Chocolates</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/durga.jpg" alt="Logo" class="brand-logo me-2 d-none d-md-block">
+        <span class="brand-name">Durga's Homemade Chocolates</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Our Chocolates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center position-relative overflow-hidden" id="home">
+    <div class="hero-overlay"></div>
+    <div class="animated-choco d-none d-md-block">
+      <img src="assets/img/dry fruit cropped.png" class="choco-float choco1" alt="Choco1">
+      <span class="sparkle sparkle1"><img src="assets/img/sparkle.svg" alt="*"></span>
+      <img src="assets/img/plain chocolate cropped.png" class="choco-float choco2" alt="Choco2">
+      <span class="sparkle sparkle2"><img src="assets/img/sparkle.svg" alt="*"></span>
+      <img src="assets/img/almond cropped.png" class="choco-float choco3" alt="Choco3">
+      <span class="sparkle sparkle3"><img src="assets/img/sparkle.svg" alt="*"></span>
+    </div>
+    <div class="container hero-content">
+      <h1 class="fade-in">Crafted With Love <span class="heart">&#10084;</span></h1>
+      <p class="fade-in" style="transition-delay:0.2s">Premium Homemade Chocolates, Made Fresh Just For You</p>
+      <a href="#shop" class="btn btn-choco fade-in" style="transition-delay:0.4s" id="shopNowBtn">Shop Now</a>
+      <!-- Order Modal Card -->
+      <div id="orderCard" class="order-card" style="display:none;">
+        <div class="order-card-content">
+          <span class="order-close" id="orderCloseBtn">&times;</span>
+          <h4>Place Your Order</h4>
+          <p>We'd love to serve you! To place an order, please call us at:</p>
+          <a href="tel:+917337402181" class="order-phone">+91 73374 02181</a>
+          <p class="order-thankyou">Thank you for choosing Durga's Homemade Chocolates!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="py-5" id="categories">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured Categories</h2>
+      <div class="row g-4 mt-4 justify-content-center">
+        <div class="col-md-4 col-lg-3 fade-in">
+          <div class="card category-card">
+            <img src="assets/img/plain chocolates.png" class="card-img-top category-img" alt="Plain Chocolates">
+            <div class="card-body text-center">
+              <h5 class="card-title">Plain Chocolates</h5>
+              <p class="mb-1">12 Pieces</p>
+              <ul class="list-unstyled mb-2">
+                <li>Dark Chocolate: <strong>₹130</strong></li>
+                <li>Milk Chocolate: <strong>₹150</strong></li>
+                <li>3 Mix: <strong>₹250</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 fade-in">
+          <div class="card category-card">
+            <img src="assets/img/dri fruit chocolates.png" class="card-img-top category-img" alt="Dry Fruit">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dry Fruit Chocolates</h5>
+              <p class="mb-1">12 Pieces</p>
+              <ul class="list-unstyled mb-2">
+                <li>Dark Chocolate: <strong>₹150</strong></li>
+                <li>Milk Chocolate: <strong>₹170</strong></li>
+                <li>3 Mix: <strong>₹250</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 fade-in">
+          <div class="card category-card">
+            <img src="assets/img/almond chocolates.png" class="card-img-top category-img" alt="Dry Fruit Almond">
+            <div class="card-body text-center">
+              <h5 class="card-title">Special – Roasted Almonds Chocolates</h5>
+              <p class="mb-1">12 Pieces</p>
+              <ul class="list-unstyled mb-2">
+                <li>Dark Chocolate: <strong>₹170</strong></li>
+                <li>Milk Chocolate: <strong>₹190</strong></li>
+                <li>3 Mix: <strong>₹300</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-end mt-2"><small class="text-muted">Note: 1 - 2 days required to prepare your order.</small></div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="py-5 bg-light" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 fade-in">
+          <img src="assets/img/about durga.png" alt="About Durga's Chocolates" class="img-fluid rounded-4 shadow">
+        </div>
+        <div class="col-md-6 fade-in">
+          <h2 class="section-title">Our Story</h2>
+          <p>At Durga’s Homemade Chocolates, each piece is lovingly handcrafted using the finest natural ingredients. Our journey began with a passion for sharing the warmth of tradition and the joy of homemade treats. Every chocolate is a testament to our commitment to quality, taste, and the art of chocolate making. Experience the richness and love in every bite!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Carousel -->
+  <section class="py-5 best-sellers" id="shop">
+    <div class="container">
+      <h2 class="section-title fade-in">Best Sellers</h2>
+      <div class="row justify-content-center align-items-end g-4">
+        <div class="col-md-4 text-center">
+          <img src="assets/img/dry fruit cropped.png" class="best-seller-img mb-2" alt="Best Seller 1">
+          <h5>Almond Crunch</h5>
+          <p>₹300</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="assets/img/almond cropped.png" class="best-seller-img mb-2" alt="Best Seller 2">
+          <h5>Dry Fruit Mix</h5>
+          <p>₹150</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="assets/img/plain chocolate cropped.png" class="best-seller-img mb-2" alt="Best Seller 3">
+          <h5>Classic Milk</h5>
+          <p>₹150</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5" id="testimonials" style="background: var(--almond-beige);">
+    <div class="container">
+      <h2 class="section-title fade-in">What Our Customers Say</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 fade-in">
+          <div class="testimonial">
+            “Absolutely delicious chocolates! You can taste the love and quality in every bite. Highly recommended!”<br><strong>- Jaya Sai.</strong>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="testimonial">
+            “The best homemade chocolates I’ve ever had. Perfect for gifting and personal treats!”<br><strong>- Viishhnu Vardhun Reddy.</strong>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="testimonial">
+            “Beautifully crafted, rich flavors, and always fresh. Durga’s is my go-to for chocolates!”<br><strong>- Manoj Kumar.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offer Banner -->
+  <div class="special-offer fade-in">
+    Get 10% off on your first order! Use code: <strong>WELCOME10</strong>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container contact-section">
+      <h2 class="section-title fade-in">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6 fade-in">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-choco">Send Message</button>
+          </form>
+        </div>
+        <div class="col-md-6 fade-in d-flex flex-column align-items-center justify-content-center">
+          <div class="mb-3">
+            <a href="https://wa.me/917337402181" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp"></i> WhatsApp: 7337402181</a>
+          </div>
+          <div>
+            <iframe src="https://maps.google.com/maps?q=17.5253068,78.3419033&z=17&output=embed" width="100%" height="200" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/917337402181" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.877 7.877 0 0 0 8.005 0C3.584 0 .007 3.582.007 8c0 1.397.366 2.762 1.06 3.964L0 16l4.133-1.085A7.94 7.94 0 0 0 8.005 16c4.422 0 7.999-3.582 7.999-8 0-1.397-.366-2.762-1.06-3.964a7.934 7.934 0 0 0-1.343-1.71zm-5.596 12.09a6.6 6.6 0 0 1-3.357-.92l-.24-.143-2.453.644.656-2.389-.156-.246A6.565 6.565 0 0 1 1.35 8c0-3.59 2.927-6.5 6.55-6.5 1.747 0 3.39.676 4.625 1.902A6.455 6.455 0 0 1 14.65 8c0 3.59-2.927 6.5-6.55 6.5zm3.623-4.982c-.199-.099-1.176-.581-1.358-.647-.182-.066-.314-.099-.446.099-.132.198-.511.647-.627.781-.116.132-.231.149-.43.05-.199-.099-.841-.31-1.602-.99-.592-.527-.992-1.177-1.11-1.375-.116-.198-.012-.305.087-.403.089-.089.199-.231.298-.347.099-.116.132-.198.199-.33.066-.132.033-.248-.017-.347-.05-.099-.446-1.077-.611-1.478-.161-.388-.326-.335-.446-.341l-.38-.007c-.132 0-.347.05-.53.248-.182.198-.695.681-.695 1.66 0 .979.712 1.924.811 2.058.099.132 1.4 2.137 3.393 2.914.475.163.844.26 1.134.332.476.114.91.098 1.254.06.383-.045 1.176-.481 1.342-.946.166-.465.166-.863.116-.946-.05-.083-.182-.132-.38-.231z"/></svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <img src="assets/img/logo.png" alt="Logo" style="height:40px;">
+      </div>
+      <div class="mb-2">
+        <a href="#home" class="text-decoration-none text-light mx-2">Home</a>|
+        <a href="#about" class="text-decoration-none text-light mx-2">About Us</a>|
+        <a href="#categories" class="text-decoration-none text-light mx-2">Our Chocolates</a>|
+        <a href="#shop" class="text-decoration-none text-light mx-2">Shop</a>|
+        <a href="#testimonials" class="text-decoration-none text-light mx-2">Testimonials</a>|
+        <a href="#contact" class="text-decoration-none text-light mx-2">Contact Us</a>
+      </div>
+      <div class="mt-2 small">&copy; Durga’s Homemade Chocolates. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
